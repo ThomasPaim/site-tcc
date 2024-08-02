@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    header {
+      background-color: #ffffff;
+      height: 10vh;
+      box-shadow: 0 0.5vw 1vh rgba(0, 0, 0, 0.21);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /
+    }
+
+    header > nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 9vh;
+      margin-right: 2vh;
+    }
+
+    header > img {
+      position: absolute;
+      margin-left: 1vw;
+      margin-top: 0.5vw;
+      width: 20%;
+    }
+
+    header > nav > a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      padding-left: 2vh;
+      color: #150E60;
+      font-weight: bold;
+      font-size: 3vh;
+    }
+
+    footer {
+      background-color: #ffffff;
+      height: 10vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10vh;
+      margin-bottom: 30px;
+      margin-top: 200px;
+      gap: 1rem;
+    }
+
+    #footer{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+     
+    }
+
+    
+
+    #footer-email{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    #footer-email h3{
+      max-width: 60%;
+    }
+    #footer-email img {
+      width: 50%;
+    }
+
+    #input-footer{
+      border: 1px solid #121212;
+      border-radius: 50px;
+      padding: 10px;
+      width:300px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #input-footer input{
+      border: none;
+      width: 80%;
+      padding-left: 10px;
+     
+    }
+    #input-footer input:focus{
+      outline: none;
+    }
+
+    #input-footer button{
+      background-color: #121212;
+      color: #ffffff;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+     cursor: pointer;
+     border: none;
+    }
+
+    
+
+
+    #navs{
+      display: flex;
+      gap: 2.3rem;
+    }
+
+    .nav-footer{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-footer > ul{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-footer > ul> li{
+  
+      list-style: none;
+    }
+
+    .nav-footer > ul > li > a{
+      color: #000000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .nav-footer > ul > li > a:hover{
+      text-decoration: underline;
+    }
+
+
+    #copyright {
+      position: relative; /* Define o elemento como relativo para que o pseudoelemento seja posicionado em relação a ele */
+      margin-top: 100px;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+
+  }
+
+  #copyright p{
+    font-size: 1.2rem;
+  }
+  
+  #copyright::after {
+      content: ""; /* Necessário para criar um pseudo-elemento visível */
+      position: absolute; /* Posiciona o pseudo-elemento de forma absoluta em relação ao elemento pai */
+      top: -10px; /* Ajuste o valor para definir a distância da linha do topo do elemento */
+      left: 0;
+      width: 100%; /* Faz a linha ocupar toda a largura do elemento pai */
+      border-top: 1px solid #000; /* Define a linha horizontal */
+  }
+
+    
+
+
+
+    /* #lista1 {
+      font-size: 1.2em;
+    }
+
+    #lista1 li {
+      margin-bottom: 4vh;
+    }
+
+    #lista1 a {
+      color: white;
+    }
+
+    #lista2 li {
+      font-size: 3vh;
+      border: 2px solid white;
+      border-radius: 20%;
+      margin-bottom: 2vh;
+      padding: 10px 40px 10px 60px;
+    }
+
+    #lista2 a {
+      color: white;
+    } */
+
+    @media only screen and (max-width: 834px) {
+      header img {
+        width: 200px;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+
+      header nav {
+        flex-flow: column nowrap;
+        margin: 0;
+        margin-left: 600px;
+      }
+
+      header nav a {
+        padding: 9px;
+        font-size: 1.1em;
+      }
+
+      footer {
+        height: 207px;
+        margin-top: 200px;
+      }
+
+      footer nav {
+        margin: 0px;
+      }
+
+      
+
+      #footer-email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #footer-email
+
+      footer  #footer img {
+        width: 20%;
+      }
+
+      footer  #footer .nav-footer {
+        margin: 0px;
+        margin-left: 180px;
+      }
+
+      footer  #footer .nav-footer {
+        margin: 0px;
+        margin-left: 100px;
+      }
+
+      #footer .nav-footer > ul > li {
+        font-size: 0.9em;
+        margin-left: 50px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      #input-footer{
+        border: 2px solid #121212;
+        border-radius: 50px;
+        padding: 10px;
+        width:200px;
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      #input-footer input{
+        border: none;
+        width: 70%;
+        padding-left: 10px;
+       
+      }
+      #input-footer input:focus{
+        outline: none;
+      }
+  
+      #input-footer button{
+        background-color: #121212;
+        color: #ffffff;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+       cursor: pointer;
+      }
+
+
+  
+    }
+
+    @media only screen and (max-width: 428px) {
+      header {
+        width: 100vw;
+        height: 110px;
+      }
+
+      header img {
+        margin: 0;
+        margin-top: 30px;
+      }
+
+      header nav {
+        margin: 0;
+        margin-top: -20px;
+        margin-left: 70vw;
+        font-size: 0.8em;
+      }
+
+      footer {
+        width: 100vw;
+        height: 110px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      footer img {
+        width: 125px;
+      }
+
+      footer div {
+        margin-top: 30px;
+      }
+
+      footer nav {
+        margin: 0px;
+      }
+
+      footer img {
+        margin: 0px;
+      }
+
+      footer .nav-footer {
+        margin: 0px;
+        margin-left: 5vw;
+      }
+
+      footer .nav-footer {
+        margin: 0px;
+      }
+
+      .nav-footer > ul > li {
+        height: 20px;
+        width: 21vw;
+        margin: 0;
+        margin-bottom: 1vh;
+        margin-left: 6vw;
+      }
+    }
+
+    .image-container {
+      display: inline-block;
+      position: relative;
+    }
+
+    .image-container img {
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+    .image-container a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .explorar:hover,
+    .criar:hover {
+      opacity: 0.5;
+    }
+
+    .explorar {
+      margin-right: 5px;
+    }
+
+    .criar {
+      margin-left: 5px;
+    }
+
+    #userGreeting {
+      font-size: 18px;
+      color: #5E17EB;
+      margin-left: 20px;
+      align-self: center;
+      padding: 5px 10px;
+      border: 2px solid #000000; /* Borda ao redor do nome do usuário */
+      border-radius: 5px; /* Bordas arredondadas, opcional */
+      font-weight: bold; /* Deixa a escrita em negrito */
+  }
+  
+  

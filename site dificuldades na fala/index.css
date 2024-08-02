@@ -1,0 +1,487 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#index1 {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+#index1 div {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+#index1 h1 {
+    color: #473DC6;
+    font-weight: bolder;
+    font-size: 6vh;
+}
+
+#index1 h2 {
+    color: #0CC0DF;
+    font-weight: bolder;
+    font-size: 4vh;
+}
+
+#index1 p {
+    color: #555555;
+    font-size: 3vh;
+    margin-top: 20px;
+}
+
+#index1 #btn {
+    display: flex;
+    gap: 3vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 4vh;
+}
+
+#index1 a {
+    width: 10vw;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 2vh;
+    color: #473DC6;
+    text-decoration: none;
+    border: 0.5vh solid;
+    border-radius: 4VH;
+    padding: 1vh 0vh;
+    flex-basis: 40%;
+    transition: all .35s;
+    
+}
+
+#index1 .btn-1 {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Para garantir que o pseudo-elemento não ultrapasse os limites do botão */
+    transition: color 0.35s, border-color 0.35s;
+  }
+  
+  #index1 .btn-1:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #473DC6;
+    transition: width 0.35s;
+    color: #fff;
+    z-index: -1; /* Garante que o pseudo-elemento fique atrás do texto */
+  }
+  
+  #index1 .btn-1:hover {
+    color: #fff;
+    border-color: #473DC6; /* Adiciona a transição suave da borda */
+  }
+  
+  #index1 .btn-1:hover:after {
+    width: 100%;
+    color: #fff;
+  }
+  
+  
+
+@keyframes changeColor {
+    0% {
+      background-color: #473DC6;
+    }
+    50% {
+      background-color: #0CC0DF;
+    }
+    100% {
+      background-color: #473DC6;
+    }
+  }
+   
+  #index1 .degrade {
+    background-image: linear-gradient(to left, #473DC6, #0CC0DF);
+    animation: changeColor 5s infinite alternate; /* 5s para uma transição suave */
+    color: #fff;
+  }
+   
+  #index1 .degrade:hover {
+    animation-play-state: paused; /* Pausa a animação quando o botão é hover */
+  }
+
+  #index1 img {
+    width: 100%; /* Ajustado para ocupar a largura total da div */
+    max-width: none; /* Removido o limite máximo de largura */
+    transition: transform 0.5s ease-in-out; /* Adicionado transição suave */
+    transform: scale(1.05); /* Aplicando uma ligeira ampliação no hover */
+    animation: floatAnimation 3s ease-in-out infinite; /* Adicionando animação de flutuação */
+  }
+  @keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Flutua para cima */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+  #section2 {
+    background-color: #f0f0f0;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#section2 h1 {
+    text-align: left;
+    color: #473DC6;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-bottom: 3vh;
+    margin-left: 20vh;
+}
+
+#section2 h3 {
+    text-align: left;
+    color: #555555;
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    margin-left: 20vh;
+}
+
+#section2 article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#section2 .item {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+}
+
+#section2 .item img {
+    max-width: 50%;
+    margin-left: 10vh;
+}
+
+#section2 .text-container {
+    flex: 1;
+    text-align: left;
+}
+
+#section2 .text-container h1 {
+    color: #F3900F;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 1vh;
+    margin-right: vh;
+}
+
+#section2 .text-container h2 {
+    color: #555555;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+    margin-top: 0;
+    margin-left: 20vh;
+}
+
+
+#section1 {
+    height: 730px;
+    background-color: #ffffff;
+}
+
+#section1 h1 {
+    text-align: left;
+    color: #473DC6;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-top: 0vh;
+    margin-left: 10vh;
+    flex-wrap: wrap;
+}
+
+#section1 h3 {
+    text-align: left;
+    color: #555555;
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    margin-left: 10vh;
+}
+
+#section1 article {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    /* height: 100vh; */
+}
+
+#section1 div {
+    height: 75vh;
+}
+
+#section1 img {
+    height: 40vw;
+    margin-top: -10vh;
+}
+
+#section1 p {
+    width: 20vw;
+    margin-top: 0vh;
+    justify-content: center;
+}
+
+#section1 a {
+    display: block;
+    text-align: center;
+    width: 15vw;
+    background-color: #150E60;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 1vh 1vh;
+    margin-left: 4vh;
+    margin-top: -15vh; /* Alterado para mover mais para cima */
+    margin-bottom: 0vh;
+}
+
+
+
+#section3 {
+    background-color: #efe3ff;
+    height: 730px;
+}
+
+#section3 article {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+#section3 h1 {
+    color: #009688;
+    font-size: 2em;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: 75px;
+}
+
+#bloco {
+    Width: 319px;
+    Height: 193px;
+    margin-bottom: 15px;
+    background-color: #C4C4C4;
+}
+
+#section3 h2 {
+    color: #009688;
+}
+
+#section3 p {
+    width: 319px;
+    font-weight: 500;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: baseline;
+    text-align: justify;
+}
+
+#section3 a {
+    display: block;
+    width: 280px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #FF4081;
+    text-decoration: none;
+    border: 2px solid #FF4081;
+    border-radius: 50px;
+    padding: 5px 0px;
+    margin-left: 580px;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 834px) {
+    
+    #index1 h1 {
+        font-size: 2em;
+        margin-top: -125px;
+        margin-left: -50px;
+    }
+
+    #index1 p {
+        font-size: 1.2em;
+        margin-left: -50px;
+    }
+
+    #index1 a {
+        font-size: 1.1em;
+        width: 180px;
+        margin-left: -50px;
+    }
+
+    #index1 img {
+        max-width: 200px;
+        margin-top: -80px;
+    }
+
+    #section1 {
+        height: 1000px;
+        text-align: center;
+    }
+
+    #section1 article {
+        flex-flow: column nowrap;
+        padding-top: 100px;
+        text-align: center;
+    } 
+
+    #section1 div {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #section1 img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #section1 h2 {
+        font-size: 1.5em;
+    }
+
+    #section1 p {
+        font-size: 0.9em;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #section1 a {
+        width: 110px;
+        padding: 0px 15px 15px 15px;
+        height: 10px;
+        font-size: 1em;
+        margin: auto;
+    }
+
+    #section2 h1 {
+        font-size: 1.8em;
+    }
+
+    #section2 article {
+        flex-flow: column nowrap;
+    } 
+    
+    #section2 div {
+        justify-content: center;
+    }
+
+    #section2 h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    #section3 p {
+    width: 319px;
+    font-weight: 500;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: baseline;
+    text-align: justify;
+}
+
+    #section3 article h1{
+        color: #000000;
+    }
+
+    #section3 article .relato {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    #section3 article .relato img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    #section3 article .relato .texto-relato {
+        max-width: 600px;
+        text-align: justify;
+    }
+    
+    #section3 article h2 {
+        color: #009688;
+    }
+    
+    #section3 article p {
+        width: 600px;
+        font-weight: 500;
+        font-size: 1.1em;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    
+    #section3 article a {
+        display: block;
+        width: 280px;
+        font-size: 1.8em;
+        text-align: center;
+        color: #FF4081;
+        text-decoration: none;
+        border: 2px solid #FF4081;
+        border-radius: 50px;
+        padding: 5px 0px;
+        margin: 20px auto;
+    }
+    
+      
+}
+
+@media only screen and (max-width: 428px) {
+    
+    #index1 {
+        width: 95vw;
+    }
+
+    #index1 h1 {
+        font-size: 1.3em;
+    }
+
+    #index1 p {
+        font-size: 1.3em;
+    }
+
+    #index1 a {
+        font-size: 1em;
+        width: 30vw;
+    }
+
+    #index1 img {
+        width: 50vw;
+    }
+
+}

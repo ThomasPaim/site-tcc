@@ -1,0 +1,222 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: #ff85b4;
+    height: 117px;
+}
+
+header > nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 117px;
+    margin-right: 90px;
+}
+
+header > img {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 20px;
+   
+}
+
+header > nav > a {
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+section {
+    display: flex;
+}
+
+h1 {
+    color: #ff85b4;
+}
+
+main > section {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+main > section > div > h1 {
+    font-size: 3.2em;
+}
+
+main > section > div > p {
+    width: 461px;
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 30px;
+}
+
+main > section > div > img {
+    margin-left: 70px;
+    width: 500px;
+    height: 400px;
+}
+
+article {
+    margin-top: 70px;
+    padding-left: 200px;
+    padding-bottom: 70px;
+    background-color: rgb(255, 217, 236);
+}
+
+article div {
+    margin-top: 70px;
+}
+
+article h1 {
+    font-size: 2em;
+}
+
+article p {
+    width: 501px;
+    font-size: 1.3em;
+    margin-top: 30px;
+    display: flex;
+    justify-content: baseline;
+    text-align: justify;
+}
+
+article h1, p {
+    margin-left: 70px;
+}
+
+iframe {
+    width: 462px;
+    height: 261px;
+}
+
+hr {
+    width: 1244px;
+    height: 3px;
+    margin-left: -100px;
+    margin-top: 80px;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 834px) {
+    
+    main > section {
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+     
+    main > section > div > h1 {
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+
+    main > section > div > p {
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+
+    article section {
+        display: block;
+    }
+
+    article h1 {
+        margin: 0;
+    }
+
+    article p {
+        margin: 0;
+    }
+
+    hr {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    
+    main > section > div > h1 {
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+        font-size: 2.5em;
+    }
+
+    main > section > div > p {
+        margin: auto;
+        margin-bottom: 3vh;
+        font-size: 1.2em;
+        width: 90vw;
+    }
+
+    main > section > div > img {
+        margin: 0;
+        height: 40vh;
+    }
+
+    article {
+        padding: 0;
+    }
+
+    article section {
+        display: block;
+        margin: 0;
+    }
+    
+    article iframe {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    article h1 {
+        margin-left: 5vw;
+    }
+
+    article p {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+    }
+
+    hr {
+        width: 10vw;
+    }
+}
+
+footer {
+    background-color: #FF4081;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; /* Adicionei esta linha para alinhar os elementos no espaço disponível */
+    padding: 20px; /* Adicionei esta linha para dar algum espaçamento interno ao rodapé */
+}
+
+footer img {
+    width: 100px; /* Alterei o tamanho da imagem no rodapé */
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #FF4081; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    font-weight: bold; /* Torna o texto em negrito */
+  }
+
+  /* Estilos para o link quando o mouse está sobre ele */
+  a:hover {
+    text-decoration: underline; /* Adiciona sublinhado quando o mouse está sobre o link */
+  }
+
+  .link-financiamento {
+    display: inline-block;
+    margin-left: 70px; /* Ajuste conforme necessário */
+    margin-top: -8px; /* Ajuste para subir mais um pouco */
+  }
